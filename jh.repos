@@ -1,7 +1,7 @@
 repositories:
   demonstrations/rmf_demos:
     type: git
-    url: git@github.com:JunHaoChng/heartbeat_demos.git
+    url: https://github.com/JunHaoChng/heartbeat_demos.git
     version: 1af030ba2a5acc553d09454e6ff10722e147558a
   rmf/ament_cmake_catch2:
     type: git
@@ -29,7 +29,7 @@ repositories:
     version: 2.0.0 
   rmf/rmf_simulation:
     type: git
-    url: git@github.com:JunHaoChng/heartbeat_rmf_simulation.git
+    url: https://github.com/JunHaoChng/heartbeat_rmf_simulation.git
     version: 0035a578bfe3689b957ef5d63bdb30fa74a87ed6
   rmf/rmf_task:
     type: git
