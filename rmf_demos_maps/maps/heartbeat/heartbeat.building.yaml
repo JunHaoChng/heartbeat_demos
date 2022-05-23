@@ -1,0 +1,164 @@
+coordinate_system: reference_image
+crowd_sim:
+  agent_groups:
+    - {agents_name: ["", tinyRobot1, tinyRobot2], agents_number: 3, group_id: 0, profile_selector: external_agent, state_selector: external_static, x: 0, y: 0}
+  agent_profiles:
+    - {ORCA_tau: 1, ORCA_tauObst: 0.4, class: 1, max_accel: 0, max_angle_vel: 0, max_neighbors: 10, max_speed: 0, name: external_agent, neighbor_dist: 5, obstacle_set: 1, pref_speed: 0, r: 0.25}
+  enable: 0
+  goal_sets: []
+  model_types: []
+  obstacle_set: {class: 1, file_name: L2_navmesh.nav, type: nav_mesh}
+  states:
+    - {final: 1, goal_set: -1, name: external_static, navmesh_file_name: ""}
+  transitions: []
+  update_time_step: 0.1
+graphs:
+  {}
+levels:
+  L2:
+    drawing:
+      filename: pics/L2.pgm
+    elevation: 0
+    fiducials:
+      - [247.488, 1000.477, f1]
+      - [415.587, 996.605, f2]
+      - [469.05, 483.043, f3]
+    floors:
+      - parameters: {ceiling_scale: [3, 1], ceiling_texture: [1, blue_linoleum], indoor: [2, 0], texture_name: [1, blue_linoleum], texture_rotation: [3, 0], texture_scale: [3, 1]}
+        vertices: [3, 18, 17, 16, 15, 14, 13, 4, 10, 11, 12, 5]
+    lanes:
+      - [0, 8, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [8, 9, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [9, 19, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [9, 20, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [8, 23, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [20, 26, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [20, 27, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""], speed_limit: [3, 0]}]
+    layers:
+      {}
+    measurements:
+      - [1, 2, {distance: [3, 7.688]}]
+      - [7, 6, {distance: [3, 7.678]}]
+    vertices:
+      - [454.3, 517.8, 0, "", {lift_cabin: [1, PL5], spawn_robot_name: [1, ""], spawn_robot_type: [1, ""]}]
+      - [254.944, 996.327, 0, ""]
+      - [408.149, 996.503, 0, ""]
+      - [494.235, 375.373, 0, ""]
+      - [401.338, 483.503, 0, ""]
+      - [494.214, 482.995, 0, ""]
+      - [737.851, 1153.189, 0, ""]
+      - [584.625, 1153.062, 0, ""]
+      - [454.576, 431.412, 0, p1]
+      - [405.11, 463.831, 0, "", {is_charger: [4, true], is_holding_point: [4, true], is_parking_spot: [4, true], spawn_robot_name: [1, tinyRobot1], spawn_robot_type: [1, TinyRobot]}]
+      - [420.361, 483.665, 0, ""]
+      - [418.033, 565.2670000000001, 0, ""]
+      - [495.384, 567.047, 0, ""]
+      - [402.41, 569.255, 0, ""]
+      - [331.391, 572.228, 0, ""]
+      - [327.427, 482.381, 0, ""]
+      - [255.088, 454.965, 0, ""]
+      - [254.757, 380.643, 0, ""]
+      - [400.758, 377.34, 0, ""]
+      - [403.06, 392.536, 0, ""]
+      - [322.522, 427.536, 0, p3]
+      - [435.672, 483.619, 0, ""]
+      - [476.792, 483.737, 0, ""]
+      - [483.684, 447.909, 0, p2, {dock_name: [1, ""], is_charger: [4, true], is_parking_spot: [4, true]}]
+      - [400.371, 615.77, 0, ""]
+      - [333.631, 818.978, 0, ""]
+      - [359.476, 427.916, 0, p4]
+      - [307.893, 457.308, 0, ""]
+    walls:
+      - [3, 5, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [4, 10, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [10, 11, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [11, 12, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [12, 5, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [3, 18, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [18, 17, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [17, 16, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [16, 15, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [15, 14, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [14, 13, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [13, 4, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [10, 21, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [5, 22, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+  L3:
+    drawing:
+      filename: pics/L3.pgm
+    elevation: 10
+    fiducials:
+      - [331.333, 843.961, f1]
+      - [503.587, 843.852, f2]
+      - [560.883, 335.217, f3]
+    floors:
+      - parameters: {ceiling_scale: [3, 1], ceiling_texture: [1, blue_linoleum], indoor: [2, 0], texture_name: [1, blue_linoleum], texture_rotation: [3, 0], texture_scale: [3, 1]}
+        vertices: [14, 15, 16, 4, 3, 2, 7, 8, 9, 10, 11, 12, 13, 5]
+    lanes:
+      - [0, 6, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [18, 1, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [1, 0, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""], speed_limit: [3, 0]}]
+    layers:
+      {}
+    vertices:
+      - [541.607, 324.57, 0, ""]
+      - [489.622, 311.136, 0, "", {is_charger: [4, true], is_holding_point: [4, true], is_parking_spot: [4, true], spawn_robot_name: [1, tinyRobot2], spawn_robot_type: [1, TinyRobot]}]
+      - [488.292, 227.016, 0, ""]
+      - [585.3200000000001, 222.102, 0, ""]
+      - [586.853, 335.608, 0, ""]
+      - [490.771, 334.92, 0, ""]
+      - [542.381, 364.679, 0, "", {lift_cabin: [1, ele1]}]
+      - [488.416, 154.512, 0, ""]
+      - [450.678, 154.207, 0, ""]
+      - [353.289, 247.944, 0, ""]
+      - [349.51, 335.239, 0, ""]
+      - [419.681, 336.59, 0, ""]
+      - [419.681, 393.609, 0, ""]
+      - [491.426, 393.321, 0, ""]
+      - [511.726, 334.581, 0, ""]
+      - [511.726, 412.507, 0, ""]
+      - [586.706, 412.28, 0, ""]
+      - [569.751, 334.862, 0, ""]
+      - [423.082, 305.317, 0, ""]
+      - [542.381, 364.679, 0, "", {lift_cabin: [1, PL5]}]
+      - [519.867, 334.601, 0, ""]
+    walls:
+      - [2, 3, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [3, 4, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [2, 7, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [7, 8, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [8, 9, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [9, 10, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [10, 11, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [11, 12, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [12, 13, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [13, 5, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [5, 14, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [14, 15, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [15, 16, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [16, 4, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [17, 4, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [14, 20, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+lifts:
+  PL5:
+    depth: 3
+    doors:
+      d1:
+        door_type: 2
+        motion_axis_orientation: 0
+        width: 1.4
+        x: 0
+        y: 1.5
+    highest_floor: L3
+    initial_floor_name: L2
+    level_doors:
+      L2: [d1]
+      L3: [d1]
+    lowest_floor: L2
+    plugins: true
+    reference_floor_name: L2
+    width: 1.7
+    x: 454.3
+    y: 517.8
+    yaw: 0
+name: galen
